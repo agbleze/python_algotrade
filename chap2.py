@@ -113,6 +113,15 @@ plt.legend()
 plt.show()          
         
     
+## fundamanetal technical analysis for trading signals ####
+
+# Simple Moving Avergae (SMA)
+## Averaging price of an instrument over time window
+
+#%% implement SMA
+
+
+
 
 
 
