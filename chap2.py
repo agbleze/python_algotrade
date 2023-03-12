@@ -119,6 +119,7 @@ plt.show()
 ## Averaging price of an instrument over time window
 
 #%% implement SMA
+import statistics
 
 
 
