@@ -134,5 +134,6 @@ for close_price in close:
 goog_data = goog_data.assign(ClosePrice=pd.Series(close, index=goog_data.index))
 goog_data = goog_data.assign(Simple20DayMivingAverage=pd.Series(sma_values, index=goog_data.index))
 close_price = goog_data['ClosePrice']
+sma = goog_data['Simple20DayMivingAverage']
 
 
