@@ -119,8 +119,20 @@ plt.show()
 ## Averaging price of an instrument over time window
 
 #%% implement SMA
-import statistics
+import statistics as stats
 
+time_period = 20
+history = []
+sma_values = []
 
+for close_price in close:
+    history.append(close_price)
+    if len(history) > time_period:
+        del (history[0])
+    sma_values.append(stats.mean(history))
+
+goog_data = goog_data.assign(ClosePrice=pd.Series(close, index=goog_data.index))
+goog_data = goog_data.assign(Simple20DayMivingAverage=pd.Series(sma_values, index=goog_data.index))
+close_price = goog_data['ClosePrice']
 
 
