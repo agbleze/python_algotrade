@@ -136,4 +136,7 @@ goog_data = goog_data.assign(Simple20DayMivingAverage=pd.Series(sma_values, inde
 close_price = goog_data['ClosePrice']
 sma = goog_data['Simple20DayMivingAverage']
 
+import matplotlib.pyplot as plt
 
+fig = plt.figure()
+ax1 = fig.add
