@@ -139,4 +139,7 @@ sma = goog_data['Simple20DayMivingAverage']
 import matplotlib.pyplot as plt
 
 fig = plt.figure()
-ax1 = fig.add
+ax1 = fig.add_subplot(111, ylabel="Goog price in $")
+close_price.plot(ax=ax1, color='g', lw=2, legend=True)
+sma.plot(ax=ax1, color='r', lw=2, legend=True)
+plt.show()
