@@ -47,6 +47,17 @@ for close_price in close:
     ema_values.append(ema_p)
     
 goog_data = goog_data.assign(ClosePrice=pd.Series(close, index=goog_data.index))    
-goog_data
+goog_data = goog_data.assign(Exponential20DayMovingAverage=pd.Series(ema_values, index=goog_data.index))
+
+close_price = goog_data['ClosePrice']
+ema = goog_data['Exponential20DayMovingAverage']
+
+fig = plt.figure()
+
+ax1 = fig.add_subplot(111, ylabel='Google price in $')
+close_price.plot(ax=ax1, color='g', lw=2., legend=True)
+ema.plot(ax=ax1, color='b', lw=2, legend=True)
+plt.show()
 
 
+# %%
