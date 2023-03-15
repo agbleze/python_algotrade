@@ -61,3 +61,23 @@ plt.show()
 
 
 # %%
+
+ema
+
+# %%
+import pandas_ta as ta
+
+#%%
+
+close_df = goog_data2['Close']
+
+
+
+# %%
+
+ta.ema(close_df, length=20)
+
+
+#ema10_ohlc4 = ta.ema(ta.ohlc4(df["Open"], df["High"], df["Low"], df["Close"]), length=10)
+
+# %%
