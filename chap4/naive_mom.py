@@ -1,6 +1,5 @@
-# Naive momentum strategy involves making a buy or a sell 
-# when the price is at a certain threshold for a specific number of 
-# days or time
+# we will implement a naive strategy based on the number of times
+# a price increases or decreases. This strategy is based on the historical price momentum
 
 #%%
 import pandas as pd
