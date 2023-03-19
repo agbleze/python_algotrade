@@ -82,6 +82,7 @@ plt.legend(['Price', 'Highs', 'Lows', 'Average', 'Buy', 'Sell'])
 plt.title('Turtle Trading Strategy')
 plt.show()
 
+
 #%%
 ## initial amount of money
 initial_capital = float(10000.0)
